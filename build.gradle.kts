@@ -20,8 +20,10 @@ java {
 
 dependencies {
     val jUnitVersion: String by project
+    val assertJVersion: String by project
     testImplementation(platform("org.junit:junit-bom:$jUnitVersion"))
     testImplementation("org.junit.jupiter:junit-jupiter:$jUnitVersion")
+    testImplementation("org.assertj:assertj-core:$assertJVersion")
 }
 
 tasks.test {
